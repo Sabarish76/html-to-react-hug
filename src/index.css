@@ -78,21 +78,7 @@ body {
   pointer-events: none;
 }
 
-/* ═══ GRID OVERLAY ═══ */
-.grid-overlay {
-  position: fixed; inset: 0; z-index: 0; pointer-events: none;
-  background-image:
-    linear-gradient(rgba(59,130,246,.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59,130,246,.04) 1px, transparent 1px);
-  background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse 80% 80% at 50% 0%, black 40%, transparent 100%);
-  transition: opacity .4s ease;
-}
-[data-theme="light"] .grid-overlay {
-  background-image:
-    linear-gradient(rgba(59,130,246,.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59,130,246,.07) 1px, transparent 1px);
-}
+/* Grid overlay removed — now rendered on canvas */
 
 /* ═══ AMBIENT GLOWS ═══ */
 .glow-orb {
